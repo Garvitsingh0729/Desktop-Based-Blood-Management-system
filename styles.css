@@ -1,0 +1,40 @@
+/* Simple medical-themed CSS - no footer as requested */
+:root{
+  --bg:#fff;
+  --accent:#d62828;
+  --muted:#6b6b6b;
+  --card:#fff;
+  --glass: rgba(255,255,255,0.6);
+}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Arial,sans-serif}
+body.theme{background:linear-gradient(180deg,#fff 0%,#fff 60%);color:#222;margin:0}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:linear-gradient(90deg, rgba(214,40,40,0.06), rgba(255,255,255,0));backdrop-filter:blur(4px)}
+.logo{height:44px}
+.topbar nav a{margin-left:12px;text-decoration:none;color:var(--muted)}
+.topbar nav a.btn{padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff}
+.hero{display:flex;align-items:center;gap:24px;padding:32px 48px}
+.hero-left{max-width:640px}
+.hero-left h1{font-size:34px;margin:0 0 8px;color:var(--accent)}
+.primary{display:inline-block;padding:10px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;margin-top:12px}
+.features{display:flex;gap:18px;padding:20px 48px}
+.features article{flex:1;background:linear-gradient(180deg, rgba(255,255,255,0.9), #fff);border-radius:12px;padding:18px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.features img{height:56px}
+.card{background:var(--card);border-radius:12px;padding:20px;max-width:980px;margin:28px auto;box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+.center{text-align:center}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.bigcard{display:block;padding:14px;border-radius:10px;text-decoration:none;color:inherit;background:#fff;border:1px solid #f1f1f1}
+.bigcard img{height:88px}
+label{display:block;margin:10px 0;font-size:14px}
+input,select,textarea{width:100%;padding:8px;border-radius:8px;border:1px solid #ddd}
+button.primary{border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+.list{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.list .item{padding:10px;border-radius:8px;border:1px solid #eee}
+.muted{color:var(--muted);font-size:13px}
+.videos{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+
+/* responsive */
+@media(max-width:880px){
+  .hero{flex-direction:column;text-align:center}
+  .grid2{grid-template-columns:1fr}
+  .hero-right img{max-width:260px}
+}
